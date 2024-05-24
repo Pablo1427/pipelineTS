@@ -1,5 +1,5 @@
 import {Model,Sequelize} from 'sequelize';
-// import TablaController from '../controllers/TablaController';
+import PlanetaController from '../controllers/PlanetaController';
 
 interface PlanetaAttributes {
     id:number;

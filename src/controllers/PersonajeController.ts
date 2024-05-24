@@ -35,6 +35,7 @@ class PersonajeController extends AbstractController{
             console.log(req.body);
             await PersonajeModel.create(req.body);
             console.log("<h1>Personaje creado</h1>");
+            console.log(req.body)
             res.status(200).send("<h1>Personaje creado</h1>");
         } catch (err) {
             console.log(err);

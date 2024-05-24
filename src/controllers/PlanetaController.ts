@@ -25,8 +25,7 @@ class PlanetaController extends AbstractController{
             console.log(req.body);
             await db.Planeta.create(req.body); //INSERT
             console.log("Planeta creado");
-            res.status(200).send("<h1>Planeta creado</h1>");
-
+            res.status(200).send(req.body);
         }catch(error:any){
             console.log(error);
             res.status(500).send('Internal server error'+error);
